@@ -12,10 +12,17 @@ Unificar la consulta de indicadores en una plataforma única, reduciendo tiempos
 - Orígenes: TXT/CSV/XLS + conectores ERP/CRM/Billing
 
 ## Artefactos
-- `/diagrams/arquitectura-qlikview.mmd`
-- `/docs/kpis.md` (definiciones/periodicidad)
-- `/docs/catálogo-reportes.md` (dominios/propietarios)
-- `/uat/plan-uat.md` · `/uat/checklist-go-no-go.md`
+
+📁 `/diagrams`  
+- [`arquitectura-qlikview.mmd`](./diagrams/arquitectura-qlikview.mmd): arquitectura y componentes (Desktop, QVS/AccessPoint, Publisher, QVD/QVW, fuentes).
+
+📁 `/docs`  
+- [`kpis.md`](./docs/kpis.md): definiciones, periodicidad y TTGL/TTV (placeholders).  
+- [`catálogo-reportes.md`](./docs/catálogo-reportes.md): dominios, KPIs, fuentes y owner.
+
+📁 `/uat`  
+- [`plan-uat.md`](./uat/plan-uat.md): validaciones de KPI vs fuente única, seguridad/perfiles y performance.  
+- [`checklist-go-no-go.md`](./uat/checklist-go-no-go.md): criterios mínimos para liberar.
 
 ## Nota
 Caso anonimizado; se omiten cifras y datos sensibles.
