@@ -1,14 +1,17 @@
 %% Arquitectura — Reportes en Línea (QlikView)
 graph TD
+
   subgraph "Usuarios de Negocio"
-    MKT[Marketing] --- COM[Comercial] --- OPS[Operaciones]
+    MKT["Marketing"]
+    COM["Comercial"]
+    OPS["Operaciones"]
   end
 
   subgraph "QlikView"
-    QVD[QVD/QVW (in-memory)]
+    DESK["QlikView Desktop (modelado)"]
+    QVD["QVD/QVW (in-memory)"]
     QVS["QlikView Server (QVS) + AccessPoint"]
     PUB["QlikView Publisher (cargas/distribución)"]
-    DESK["QlikView Desktop (modelado)"]
   end
 
   subgraph "Fuentes de datos"
@@ -19,16 +22,17 @@ graph TD
   end
 
   FLAT --> DESK
-  ERP --> DESK
-  CRM --> DESK
+  ERP  --> DESK
+  CRM  --> DESK
   BILL --> DESK
   DESK --> QVD
-  PUB --> QVD
-  QVD --> QVS
-  MKT --> QVS
-  COM --> QVS
-  OPS --> QVS
+  PUB  --> QVD
+  QVD  --> QVS
+  MKT  --> QVS
+  COM  --> QVS
+  OPS  --> QVS
 
   style QVS fill:#bbf,stroke:#333
   style PUB fill:#ffd,stroke:#333
   style QVD fill:#cfc,stroke:#333
+
