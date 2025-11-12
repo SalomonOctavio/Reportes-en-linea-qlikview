@@ -1,0 +1,3 @@
+# Reportes en Línea (QlikView) — TELCO, 2013–2014
+
+Plataforma de dashboards en línea para Marketing/Comercial/Operaciones...
